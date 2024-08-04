@@ -43,12 +43,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                     // Set the SMTP credentials and server details
                     $mail->isSMTP();
-                    $mail->Host = 'smtp.gmail.com';
-                    $mail->SMTPAuth = true;
-                    $mail->Username = 'redmindigo@gmail.com';
-                    $mail->Password = 'oso rag vsp lzh wwdb';
-                    $mail->SMTPSecure = 'tls';
-                    $mail->Port = 587;
+                    $mail->Host = '';
+                    $mail->SMTPAuth = ;
+                    $mail->Username = '';
+                    $mail->Password = '';
+                    $mail->SMTPSecure = '';
+                    $mail->Port = ;
 
                     // Set the email subject, body, and recipient
                     $mail->Subject = 'Reset Password';
