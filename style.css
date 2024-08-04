@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+body{
+    background-color: #f8f8f8;
+    
+}
+
+:root {
+    --NavText: #444444;
+    --white: #ffffff;
+    
+  }
+
+  .list-group-item a{
+    color: #444444;
+    transition: all 0.3s ease-in-out;
+  }
+  .list-group-item a:hover {
+    transform: scale(0.97); /* decrease size on hover */
+    border-bottom: 2px solid #111111; /* add underline effect */
+  }
+
+.navbar{
+
+    padding: 8px 50px;
+    background-color: #ffffff;
+
+}
+.header{
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 27px;
+    color: #444444;
+}
+
+.navbar-brand img{
+    width: 160px;
+}
+
+.navbar-nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+
+.hero{
+    /* height: calc(100vh - 71.28px); */
+    width: 100%;
+    background-color: #110202;
+
+}
+
+.carousel-caption img{
+    height: calc(100vh - 101.28px);
+
+}
+
+.products{
+    margin-top: 180px; 
+    padding-top: 50px;
+}
+
+.products.card{
+    border: none;
+}
+
+.price{
+    font-size: large;
+}
+
+
+
+
+.card {
+    border: none;
+    cursor: pointer;
+    color: #282828;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  .card:hover .icons {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  
+  .icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  
+  .icons a {
+    margin-left: 5px;
+  }
+  
+  .icons i {
+    font-size: 1.5em;
+  }
+  
+
+
+  .carousel-item{
+    cursor: pointer;
+
+  }
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #110202;
+} 
+
+.pagination li{
+    color: #110202;
+}
+.pagination-section {
+    color: #110202;
+}
+
+.list-unstyled a{
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.list-unstyled a:hover{
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #555;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 999;
+}
+
+#scroll-to-top-btn:hover {
+    background-color: #333;
+}
+
+
+.testimonial-author img{
+    height: 64px;
+    height: 64px;
+}
+.testimonial-section{
+    background-color: #f1e8df;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.line{
+    width: 50%;
+    margin: 0px auto;
+}
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-top: -1px;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu > a:after {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    float: right;
+    margin-top: 6px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+    content: "\f107";
+}
+
+
+
+
+/* WishList */
+
+.wishlist .table td, .table th {
+	vertical-align: middle;
+  }
+  
+  .wishlist .table th {
+	text-align: center;
+  }
+  
+  .wishlist .table td:last-child {
+	text-align: center;
+  }
+  
+  .wishlist .table img {
+	max-height: 100px;
+	max-width: 100px;
+  }
+  
+  .wishlist .btn-danger {
+	background-color: #dc3545;
+	border-color: #dc3545;
+  }
+  .wishlist .btn-danger:hover {
+	background-color: #c82333;
+	border-color: #bd2130;
+  }
+  .wishlist img{
+    width: 100px;
+    height: 100px;
+  }
+
+
+  /* cart */
+
+  .back-to-shop button{
+    position: relative;
+    border: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hover Effecgt For Go To Shopping */
+.link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #b12f2f;
+    padding: 7px 0px;
+    background-color: #f8f8f8;
+}
+
+/* hover styles */
+.hover-1:after {
+        content:'';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: red;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s;
+    }
+.hover-1:hover,.hover-1:hover:after {
+            transform-origin: bottom left;
+            transform: scaleX(1);
+}
+
+
+
+/* Cart Table */
+
+.shopping-cart-content tbody img{
+    width: 100px;
+    height: 100px;
+}
+.cart-data input{
+    display: inline-block;
+    width: 30px;
+    border: none;
+}
+
+.quantity minus img,svg{
+    padding-right: 6px;
+}
+.product-actions{
+    font-size: 26px;
+    text-align: right;
+}
+.product-actions a{
+    font-size: 30px;
+    /* text-decoration: none; */
+    color: #686868 !important;
+}
+.cart-data .product-name .pro-title{
+    text-decoration: none;
+    color: #686868 !important;
+}
+.shopping-cart-content .payment-table{
+    border: 0.7px solid rgb(82, 81, 81);
+}
+
+/* Checkout Page */
+
+
+.change-address p{
+    font-weight: bold;
+}
+
+
+/* Input Tag */
+#check-form-input {
+    background-color: #f8f8f8;
+    width: 100%;
+    font-size: 18px;
+    padding: 12px 0px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(126, 124, 124);
+    -webkit-transition: 0.3s;
+    transition: 0.3s ;
+    outline: none;
+  }
+  
+  
+  #check-form-input:focus{
+    border: none;
+    border-bottom: 3px solid rgb(27, 27, 27);
+}
+
+#check-form-label{
+    font-size: 17px;
+    color: rgb(126, 124, 124);
+    opacity: 0;
+    /* transform: translate(0px, -43px); */
+    transition:  font-size 0.4s, color 0.4s, transform 0.2s;
+}
+#check-form-input:focus::placeholder{
+    opacity: 0;
+  }
+#check-form-input:focus + label{
+    font-size: 14px;
+    color: #282828;
+    transform: translate(0px, -83px);
+    opacity: 1;
+  }
+
+  .check-for-change-address{
+    cursor: pointer;
+  }
+
+  .proceed-to-checkout{
+    background-color: rgba(0,0,0,0.02);
+  }
+  .proceed-to-checkout .pro-title{
+    text-decoration: none;
+    color: #282828;
+  }
+
+
+
+  /* User Dashboard */
+
+
+
+@media only screen and (min-width: 768px) {
+  .dashboard-item ul button {
+    display: inline-block;
+    width: 100%;
+
+  }
+}
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Form */
+
+
+
+.modal-login {
+	width: 350px;
+}
+.modal-login .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+}
+.modal-login .modal-header {
+	border-bottom: none;
+	position: relative;
+	justify-content: center;
+}
+.modal-login .close {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+}
+.modal-login h4 {
+	color: #636363;
+	text-align: center;
+	font-size: 26px;
+	margin-top: 0;
+}
+.modal-login .modal-content {
+	color: #999;
+	border-radius: 1px;
+	margin-bottom: 15px;
+	background: #fff;
+	border: 1px solid #f3f3f3;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 25px;
+}
+.modal-login .form-group {
+	margin-bottom: 20px;
+}
+.modal-login label {
+	font-weight: normal;
+	font-size: 13px;
+}
+.modal-login .form-control {
+	min-height: 38px;
+	padding-left: 5px;
+	box-shadow: none !important;
+	border-width: 0 0 1px 0;
+	border-radius: 0;
+}
+.modal-login .form-control:focus {
+	border-color: #ccc;
+}
+.modal-login .input-group-addon {
+	max-width: 42px;
+	text-align: center;
+	background: none;
+	border-bottom: 1px solid #ced4da;
+	padding-right: 5px;
+	border-radius: 0;
+}
+.modal-login .btn, .modal-login .btn:active {        
+	font-size: 16px;
+	font-weight: bold;
+	background: #19aa8d !important;
+	border-radius: 3px;
+	border: none;
+	min-width: 140px;
+}
+.modal-login .btn:hover, .modal-login .btn:focus {
+	background: #179b81 !important;
+}
+.modal-login .hint-text {
+	text-align: center;
+	padding-top: 5px;
+	font-size: 13px;
+}
+.modal-login .modal-footer {
+	color: #999;
+	border-color: #dee4e7;
+	text-align: center;
+	margin: 0 -25px -25px;
+	font-size: 13px;
+	justify-content: center;
+}
+.modal-login a {
+	color: #fff;
+	text-decoration: underline;
+}
+.modal-login a:hover {
+	text-decoration: none;
+}
+.modal-login a {
+	color: #19aa8d;
+	text-decoration: none;
+}	
+.modal-login a:hover {
+	text-decoration: underline;
+}
+.modal-login .fa {
+	font-size: 21px;
+	position: relative;
+	top: 6px;
+}
+.trigger-btn {
+	display: inline-block;
+	margin: 100px auto;
+}
+
+.modal-login .btn-link{
+    border: none;
+}
+.modal-login .close{
+    border: none;
+}
+.modal-login .close:hover{
+    top: -8px;
+    right: -8px;
+
+}
+
+.modal-login .close a{
+    color: #110202;
+}
+
+
+
+
+

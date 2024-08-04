@@ -1,0 +1,174 @@
+
+
+/* Product Images */
+.product-images {
+    margin-bottom: 20px;
+  }
+  
+  /* Image Gallery */
+  .image-gallery img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .image-gallery .active img {
+    border: 2px solid #007bff;
+  }
+  
+  /* Product Details */
+  .product-details h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .product-details .price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .product-details .discount-batch {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .product-details .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Bootstrap Carousel */
+  .carousel {
+    margin-bottom: 20px;
+  }
+  
+  .carousel-item {
+    text-align: center;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-image: none;
+  }
+  
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 18l-6-6 6-6'/%3E%3C/svg%3E");
+  }
+  
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18l6-6-6-6'/%3E%3C/svg%3E");
+  }
+  
+  .carousel-indicators li {
+    background-color: #ccc;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    margin: 0 8px;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #007bff;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.5);
+    text-align: left;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-caption p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  
+  .carousel-item img{
+    width: 500px;
+    height: 500px;
+  
+  }
+  
+  .pro-detail button{
+    color: #fff;
+    background-color: #000000;
+}
+.pro-detail i{
+    color: #000000;
+}
+.pro-detail button:hover{
+    color: #fff;
+    background-color: #000000;
+    opacity: 0.7;
+  }
+.pro-detail a i{
+    margin-left: 31px;
+    margin-top: 10px;
+}
+  
+  .badge{
+    color: rgba(255, 255, 255, 0.637);
+  
+    background-color: #000000;
+  }
+  
+  .pro-icon{
+    height: 25px;
+    width: auto;
+  }
+  
+
+  .my-button {
+    position: relative; /* Set the position of the button to relative so that the tooltip content can be positioned relative to it */
+  }
+  
+  .my-button:hover::before {
+    content: attr(aria-label); /* Set the content of the tooltip to the value of the "aria-label" attribute */
+    position: absolute; /* Set the position of the tooltip to absolute so that it can be positioned relative to the button */
+    top: 100%; /* Set the distance between the tooltip and the button */
+    left: 50%; /* Set the position of the tooltip relative to the button */
+    transform: translateX(-50%); /* Center the tooltip horizontally */
+    padding: 0.5rem; /* Add padding to the tooltip */
+    background-color: #000; /* Set the background color of the tooltip */
+    color: #fff; /* Set the text color of the tooltip */
+    font-size: 0.8rem; /* Set the font size of the tooltip */
+    border-radius: 0.25rem; /* Add rounded corners to the tooltip */
+    white-space: nowrap; /* Prevent the tooltip from wrapping to multiple lines */
+    opacity: 0.8; /* Set the opacity of the tooltip */
+  }
+  
+  
+  
+  /* form */
+  
